@@ -14,13 +14,17 @@ Query formatting can also be achieved at the statement level via a comment, e.g.
 
 Method 1:
 
-*select /\*csv\*/ \* from hr.employees;*
+~~~
+select \*csv\*/ \* from hr.employees;
+~~~
 
 Method 2:
 
-*set sqlformat csv*
+~~~
+set sqlformat csv*
 
-*select \* from hr.employees;*
+select * from hr.employees;
+~~~
 
 Both will return the data in the hr.employees table as comma separated values (CSV).
 
